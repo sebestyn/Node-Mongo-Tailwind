@@ -6,68 +6,11 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 
         <!-- Describtion -->
-        <meta name="description" content="
-            Debt management application for free. 
-            You can download the Android / Ios application or use it in the browser.
-            When someone pays for you, you can save them to a pre-created group.
-            Then the algorithm calculates the simplest possible way for everyone to get back or return what they owe.
-        "/>
+        <meta name="description" content=""/>
         <!-- Keywords -->
-        <meta name="keywords" content="
-            debt, 
-            debt app, 
-            debts, 
-            debts app, 
-            debtation, 
-            debtation app, 
-            deptation,
-            deptation app,
-            debt management, 
-            debt management app,
-            payments management, 
-            payments management for groups, 
-            split payments with friends app,
-            group payments, 
-            group payments management, 
-        "/>
+        <meta name="keywords" content=""/>
         <!-- Shourtcut icon -->
         <link rel="shortcut icon" href="/img/app_icons/icon_small.png" />
-
-        <!-- MOBILE PWA APP -->
-        <link rel="manifest" href="/js/pwa.webmanifest">
-        <link rel="apple-touch-icon" href="/img/app_icons/icon_small.png">
-        <meta name="theme-color" content="#FFE1C4"/>
-        <link rel="apple-touch-startup-image" />
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="apple-mobile-web-app-status-bar" href="#aa7700">
-        <meta name="apple-mobile-web-app-title" content="Debtation">
-        <link rel="apple-touch-startup-image" href="/img/app_icons/64x64.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-        <link rel="apple-touch-startup-image" href="/img/app_icons/128x128.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-        <link rel="apple-touch-startup-image" href="/img/app_icons/256x256.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-        <link rel="apple-touch-startup-image" href="/img/app_icons/512x512.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-        <link rel="apple-touch-startup-image" href="/img/app_icons/512x512.png" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
-        <link rel="apple-touch-startup-image" href="/img/app_icons/1024x1024.png" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
-        <link rel="apple-touch-startup-image" href="/img/app_icons/1024x1024.png" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
-
-        <!-- Facebook setup -->
-        <meta property="og:url"         content="https://www.debtation.hu" />
-        <meta property="og:type"        content="website" />
-        <meta property="og:title"       content="Debtation - debt managment application" />
-        <meta property="og:image"       content="/img/app_icons/192x192.png" />
-        <meta property="og:description" content="
-            Debt management application for free. 
-            You can download the Android / Ios application or use it in the browser.
-            When someone pays for you, you can save them to a pre-created group.
-            Then the algorithm calculates the simplest possible way for everyone to get back or return what they owe." 
-        />
-
-        <!-- GOOGLE ANALITYCS -->
-        <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-162711773-4"></script>
-        <script defer>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-162711773-4');</script>
-
-        <!--PRETTY CHECKBOX-->
-        <link rel="stylesheet" href="/cdn/pretty-checkbox.min.css" media="none" onload="if(media!=='all')media='all'">
 
         <!--TAILWIND CSS-->
         <link rel="stylesheet" href="/cdn/tailwind.css">
@@ -77,12 +20,6 @@
 
         <!--CSS-->
         <link rel="stylesheet" type="text/css" href="/css/all.css" />
-
-        <!-- CLIPBOARD JS -->
-        <script src="/cdn/clipboard.min.js" defer></script>
-
-        <!-- SWEETALERT2 -->
-        <script src="/cdn/sweetalert2@9.js" defer></script>
 
         <!--COOKIE-->
         <script src="/js/cookie.js"></script>
@@ -94,46 +31,6 @@
         <!--HASZNOS JS-->
         <script src="/js/hasznos.js"></script>
 
-        <!--FONTAWSOME-->
-        <link href="/cdn/fontawesome-5.13.1/css/all.css" rel="stylesheet" media="none" onload="if(media!=='all')media='all'">
-        <link href="/cdn/fontawesome-5.13.1/css/fontawesome.css" rel="stylesheet" media="none" onload="if(media!=='all')media='all'">
-        <link href="/cdn/fontawesome-5.13.1/css/fontawesome.min.css" rel="stylesheet" media="none" onload="if(media!=='all')media='all'">
-        <link rel="preload" as="font" type="font/woff2" crossorigin href="/cdn/fontawesome-5.13.1/webfonts/fa-regular-400.woff2"/>
-        <link rel="preload" as="font" type="font/woff2" crossorigin href="/cdn/fontawesome-5.13.1/webfonts/fa-solid-900.woff2"/>
-
         <!--Every page scripts-->
         <script>
-            // Dark mode
-            toggleDarkMode()
-            // iOS "previous page" -> reload the full page (bug fixes)
-            if(is_iOS){
-                window.addEventListener("pageshow", function(evt){
-                    if(evt.persisted) setTimeout(()=>{window.location.reload();},5);
-                }, false);
-            }
-            // Offline message popup 
-            window.addEventListener("load", () => {
-                const no_internet_toast = Swal.mixin({
-                    icon: 'error',
-                    title: 'Check your internet connection',
-                    toast: true,
-                    position: 'top-start',
-                    showConfirmButton: false,
-                })
-                if (!navigator.onLine) {
-                    no_internet_toast.fire();
-                }
-                function handleNetworkChange(event) {
-                    if (navigator.onLine) {
-                        no_internet_toast.close()
-                    } else {
-                        no_internet_toast.fire();
-                    }
-                }
-                window.addEventListener("online", handleNetworkChange);
-                window.addEventListener("offline", handleNetworkChange);
-            });            
         </script>
-
-        <!-- SERVICE WORKER -->
-        <script src="/js/pwa.js"></script>

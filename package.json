@@ -4,7 +4,7 @@
     "description": "Tartozások követése",
     "main": "app.js",
     "scripts": {
-        "start": "node app.js",
+        "start": "node server.js",
         "dev": "nodemon ./server.js",
         "tailwind": "tailwindcss build public/cdn/tailwind_import.css -o public/cdn/tailwind.css"
     },
