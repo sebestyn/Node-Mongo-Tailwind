@@ -1,0 +1,15 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+    background: #4361ee;
+    background: -webkit-linear-gradient(to bottom, #7209b7, #4361ee);
+    background: linear-gradient(to bottom, #7209b7, #4361ee);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

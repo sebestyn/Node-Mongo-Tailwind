@@ -1,0 +1,5 @@
+node_modules/
+robots.txt
+sitemap.xml
+.env
+public/cdn/tailwind.css

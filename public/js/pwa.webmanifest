@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json.schemastore.org/web-manifest",
+    "name": "name",
+    "short_name": "name",
+    "description": "description",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#FFE9D2",
+    "theme_color": "#FFE1C4",
+    "orientation": "portrait-primary",
+    "url": "url",
+    "lang": "en",
+    "icons": [
+        {
+            "src": "/img/app_icons/16x16.png",
+            "type": "image/png",
+            "sizes": "16x16"
+        },
+        {
+            "src": "/img/app_icons/24x24.png",
+            "type": "image/png",
+            "sizes": "24x24"
+        },
+        {
+            "src": "/img/app_icons/32x32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "/img/app_icons/48x48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "/img/app_icons/64x64.png",
+            "type": "image/png",
+            "sizes": "64x64"
+        },
+        {
+            "src": "/img/app_icons/128x128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "/img/app_icons/192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/img/app_icons/256x256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "/img/app_icons/512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "/img/app_icons/1024x1024.png",
+            "type": "image/png",
+            "sizes": "1024x1024"
+        }
+    ]
+}

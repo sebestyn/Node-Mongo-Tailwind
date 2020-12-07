@@ -1,0 +1,38 @@
+{
+    "name": "debtation",
+    "version": "1.0.0",
+    "description": "Tartozások követése",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon ./server.js",
+        "tailwind": "tailwindcss build public/cdn/tailwind_import.css -o public/cdn/tailwind.css"
+    },
+    "author": "sebestyn",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "compression": "^1.7.4",
+        "cookie-parser": "^1.4.5",
+        "cookie-session": "^1.4.0",
+        "dotenv": "^8.2.0",
+        "ejs": "^3.1.3",
+        "express": "^4.17.1",
+        "express-device": "^0.4.2",
+        "express-session": "^1.17.1",
+        "express-sitemap": "^1.8.0",
+        "forever": "^3.0.2",
+        "fs": "0.0.1-security",
+        "helmet": "^3.23.3",
+        "ip": "^1.1.5",
+        "mongoose": "^5.9.20",
+        "mongoose-schema-validator": "^1.2.3",
+        "mongoose-unique-validator": "^2.0.3",
+        "node-fetch": "^2.6.1",
+        "nodemon": "^2.0.4",
+        "passport": "^0.4.1",
+        "passport-google-oauth20": "^2.0.0",
+        "purgecss": "^2.3.0",
+        "tailwindcss": "^1.8.3"
+    }
+}

@@ -1,0 +1,45 @@
+
+.color0 {
+    color: #011627;
+}
+.color1 {
+    color: #7209b7;
+}
+.color2 {
+    color: #4361ee;
+}
+.color3 {
+    color: #f08c37;
+}
+
+.dark-mode {
+    filter: invert(1) hue-rotate(180deg);
+}
+.invert_dark-mode {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+/*
+ HTML Elements
+*/
+html,
+body {
+    height: 100%;
+}
+body {
+    background-color: rgb(245, 245, 245);
+}
+select {
+    text-align: center;
+    text-align-last: center;
+}
+input[type="date"] {
+    text-align: center;
+    text-align-last: center;
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+}
