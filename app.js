@@ -26,11 +26,13 @@ app.use(function (req, res, next) {
 });
 
 //DATABASE
-mongoose.connect(process.env.MONGODB, { useNewUrlParser: true, useUnifiedTopology: true }, () => {
-    console.log("Database connected...");
-});
-mongoose.set("useFindAndModify", false);
-mongoose.set("useCreateIndex", true);
+if (process.env.MONGODB) {
+    mongoose.connect(process.env.MONGODB, { useNewUrlParser: true, useUnifiedTopology: true }, () => {
+        console.log("Database connected...");
+    });
+    mongoose.set("useFindAndModify", false);
+    mongoose.set("useCreateIndex", true);
+}
 
 // HOME 
 app.get("/", function (req, res) {
@@ -50,4 +52,4 @@ sitemap.generate4(app);
 sitemap.TXTtoFile();
 sitemap.toFile();
 
-module.exports(app)
+module.exports = app
